@@ -36,3 +36,10 @@ API keys and secrets should **not** be committed to this repository. We are usin
    ```bash
    git clone https://github.com/yourusername/microsoft-graph-data-pull.git
    cd microsoft-graph-data-pull
+python -m venv venv
+source venv/bin/activate  # For Windows use: venv\Scripts\activate
+pip install -r requirements.txt
+touch .env
+AZURE_CLIENT_ID=your-client-id
+AZURE_CLIENT_SECRET=your-client-secret
+AZURE_TENANT_ID=your-tenant-id
